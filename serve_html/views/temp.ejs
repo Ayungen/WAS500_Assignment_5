@@ -1,0 +1,41 @@
+<html>
+
+<header>
+<center> <h1> Enesca Library </h1> </center>
+</header>
+
+<%- include('partials/nav') %>
+
+<style>
+.bodym {
+  margin: 25px 50px 75px 100px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 75px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+</style>
+
+<div class='bodym'>
+<img src="<%= books.image %>" alt="Novel The Great Gatsby" align="left">
+<h1> <%= books.title %> </h1> 
+
+<p1>
+Authour: <%= books.author %>
+<br> <br>
+Summary: <%= books.description %>
+<br> <br>
+</p1>
+
+</div>
+
+</html>
